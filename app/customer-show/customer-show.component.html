@@ -1,0 +1,20 @@
+<p>customer-show works!</p>
+<table border="3">
+    <tr>
+      <th>Customer id</th>
+      <th>Name</th>
+      <th>password</th>
+      <th>Email</th>
+      <th>mobile</th>
+      <th>address</th>
+    </tr>
+    <tr *ngFor="let e of customers">
+        <td> {{e.cus_id}}</td>
+        <td> {{e.cus_name}}</td>
+        <td> {{e.cus_password}}</td>
+        <td> {{e.cus_email}}</td>
+        <td> {{e.cus_mobile}}</td>
+     
+        <td> {{e.cus_address}}</td>
+    </tr>
+  </table>

@@ -1,0 +1,9 @@
+<p>customerdropdown works!</p>
+<select [(ngModel)]="cus_id">
+    <option *ngFor="let e of customers" value={{e.cus_id}}>
+        {{e.cus_id}}
+    </option>
+</select>
+<p>
+    Selected Name is : <b>{{cus_id}}</b>
+</p>
